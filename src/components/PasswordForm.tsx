@@ -34,9 +34,9 @@ const PasswordForm: React.FC = () => {
 
             <div className='flex flex-col justify-center items-center w-full mt-10'>
                 <span>See result</span>
-                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-white` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-red-500' : strength === `medium` ? 'bg-yellow-500' : 'bg-green-500' }`}></div>
-                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-white` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-slate-500' : strength === `medium` ? 'bg-yellow-500' : 'bg-green-500'}`}></div>
-                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-white` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-slate-500' : strength === `medium` ? 'bg-slate-500' : 'bg-green-500'}`}></div>
+                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-slate-500` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-red-500' : strength === `medium` ? 'bg-yellow-500' : 'bg-green-500' }`}></div>
+                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-slate-500` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-slate-500' : strength === `medium` ? 'bg-yellow-500' : 'bg-green-500'}`}></div>
+                <div className={`border border-gray-300 p-2 w-28 h-9 m-2 ${password.length === 0 ? `bg-slate-500` : strength === `low` ? `bg-red-500` : strength === `easy` ? 'bg-slate-500' : strength === `medium` ? 'bg-slate-500' : 'bg-green-500'}`}></div>
             </div>
         </div>
     );
