@@ -12,14 +12,10 @@ const PasswordForm: React.FC = () => {
         setPassword(passValue)
         
         setStrength(checkPassword(passValue)) 
-        console.log(password.length);
-        
-        console.log(strength);
-        
     }
     return (
         <div className='w-full flex flex-col'>
-            <div className='w-full flex justify-center items-center mt-10'>
+            <div className='w-full flex flex-col sm:flex-row justify-center items-center mt-10'>
                 <input
                     type={!showPassword ? 'password' : "text"}
                     className="border border-gray-300 p-2"
