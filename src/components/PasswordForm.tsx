@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { checkPassword } from '../helpers/checkFunctions';
 
-
 const PasswordForm: React.FC = () => {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false)
@@ -10,7 +9,6 @@ const PasswordForm: React.FC = () => {
     const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) =>{
         const passValue = event.target.value
         setPassword(passValue)
-        
         setStrength(checkPassword(passValue)) 
     }
     return (
@@ -30,7 +28,6 @@ const PasswordForm: React.FC = () => {
 
                 <button className='ml-5 hover:bg-green-500 p-2 border border-gray-300 rounded-xl' onClick={() => {setPassword('')}}> Clean</button>
             </div>
-
 
             <div className='flex flex-col justify-center items-center w-full mt-10'>
                 <span>See result</span>
